@@ -1,22 +1,104 @@
-.nav-container{
-position: absolute;
-width: 1241.56px;
-height: 27px;
-left: 100px;
-top: 55px;
- 
+.nav-container {
+  position: absolute;
+  width: 1241.56px;
+  height: 27px;
+  left: 100px;
+  top: 55px;
 }
-// .logo {
-// position: static;
-// width: 50.78px;
-// height: 20.01px;
-// left: 50.82px;
-// top: 20.01px;
 
-// background: #C4C4C4;
-// transform: rotate(179.89deg);
-// flex: none;
-// order: 0;
-// flex-grow: 0;
-// margin: 0px 7px;
-// }
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 181.82px;
+  height: 27px;
+  left: 100px;
+  top: 55px;
+}
+
+.nav-items {
+  position: absolute;
+  width: 289px;
+  height: 21px;
+  left: 396.56px;
+  top: 61px;
+}
+
+.content1 {
+ position: absolute;
+width: 66px;
+height: 21px;
+left: 0px;
+top: 0px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: black;
+}
+
+.content2 {
+    position: absolute;
+width: 51px;
+height: 21px;
+left: 129px;
+top: 0px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: black;
+}
+
+.content3 {
+    position: absolute;
+width: 46px;
+height: 21px;
+left: 243px;
+top: 0px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight:500;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: black;
+
+}
+
+.name {
+  position: static;
+  width: 124px;
+  height: 27px;
+  left: 57.82px;
+  top: 0px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #333333;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 7px;
+}
