@@ -1,0 +1,93 @@
+.BmainPic {
+  position: absolute;
+  width: 1440px;
+  height: 846px;
+  left: 0px;
+  top: 90px;
+
+}
+
+.imgBreakfast {
+  opacity: 0.7;
+}
+
+.content {
+position: absolute;
+width: 800px;
+height: 200px;
+left: 54px;
+top: 344px;
+}
+
+h1 {
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 70px;
+line-height: 105px;
+
+color: #FFFFFF;
+}
+
+p {
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+// line-height: 105px;
+
+color: #FFFFFF;
+}
+
+.recBreakfast{
+  position: absolute;
+  width: 830px;
+  height: 300px;
+  top: 450px;
+  opacity: 0.8;
+  left: 24px;
+}
+
+
+@media (max-width: 535.98px) {
+  
+  .content {
+position: absolute;
+width: auto;
+height: 200px;
+left: 54px;
+top: 344px;
+}
+
+h1 {
+
+font-size: 50px;
+line-height: 90px;
+
+
+}
+
+p {
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+
+}
+
+.recBreakfast{
+  position: absolute;
+  width: 530px;
+  height: 300px;
+  top: 450px;
+  opacity: 0.8;
+  left: 24px;
+}
+ 
+.BmainPic {
+  position: absolute;
+  width: auto;
+  top: 100px;
+
+}
+}
