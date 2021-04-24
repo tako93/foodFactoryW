@@ -18,10 +18,11 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'launch',
+    path: 'lunch',
     loadChildren: () =>
-      import('./launch/launch.module').then((m) => m.LaunchModule),
+      import('./lunch/lunch.module').then((m) => m.LunchModule),
   },
+  { path: 'dinner', loadChildren: () => import('./dinner/dinner.module').then(m => m.DinnerModule) },
 ];
 
 @NgModule({
