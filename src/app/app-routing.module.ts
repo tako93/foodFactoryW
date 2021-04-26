@@ -22,7 +22,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./lunch/lunch.module').then((m) => m.LunchModule),
   },
-  { path: 'dinner', loadChildren: () => import('./dinner/dinner.module').then(m => m.DinnerModule) },
+  {
+    path: 'dinner',
+    loadChildren: () =>
+      import('./dinner/dinner.module').then((m) => m.DinnerModule),
+  },
 ];
 
 @NgModule({

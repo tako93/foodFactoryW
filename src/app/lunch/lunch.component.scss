@@ -107,8 +107,95 @@
   letter-spacing: 0.04em;
 }
 
-
-.imgchef{
-    position: absolute;
-    left: 900px;
+.imgchef {
+  position: absolute;
+  left: 920px;
+  max-width: 400px;
 }
+
+.imgchef2 {
+  visibility: hidden;
+}
+
+@media (max-width: 535.98px) {
+  .imgLunch {
+    width: 300;
+    height: 300px;
+    left: 50px;
+    top: 250px;
+    border-radius: 50px;
+  }
+
+  .imgLunchDash {
+    width: 300px;
+    height: 300px;
+    left: 300px;
+    top: 100px;
+  }
+
+  .button {
+    width: 60px;
+    height: 30px;
+    left: 65px;
+    top: 400px;
+
+    font-size: 12px;
+    line-height: 10px;
+  }
+  .button1 {
+    width: 60px;
+    height: 30px;
+    left: 165px;
+    top: 400px;
+
+    font-size: 12px;
+    line-height: 10px;
+  }
+  .button2 {
+    width: 60px;
+    height: 30px;
+    left: 265px;
+    top: 400px;
+
+    font-size: 12px;
+    line-height: 10px;
+  }
+  .button3 {
+    width: 60px;
+    height: 30px;
+    left: 360px;
+    top: 400px;
+
+    font-size: 12px;
+    line-height: 10px;
+  }
+  .button4 {
+    width: 60px;
+    height: 30px;
+    left: 460px;
+    top: 400px;
+
+    font-size: 12px;
+    line-height: 10px;
+  }
+
+  .imgchef {
+    visibility: hidden;
+  }
+
+  .imgchef2 {
+    visibility: visible;
+    position: absolute;
+    top: 550px;
+    max-width: 300px;
+  }
+}
+
+// @media (max-width: 767.98px) {
+// }
+
+// @media (max-width: 991.98px) {
+// }
+
+// @media (max-width: 1190.98px) {
+// }
