@@ -13,7 +13,7 @@
 
 .mainText {
   position: absolute;
-  width: 451px;
+  width: 400px;
   height: 264px;
   left: 0px;
   top: -10px;
@@ -57,8 +57,8 @@ p {
 
 .button {
   position: absolute;
-  width: 150px;
-  height: 60px;
+  width: 120px;
+  height: 40px;
   left: 0px;
   top: 257px;
 
@@ -68,7 +68,7 @@ p {
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 27px;
 
   letter-spacing: 0.04em;
@@ -84,11 +84,19 @@ p {
 
 .foodMain {
   position: absolute;
-  width: 407px;
-  height: 308px;
+  width: 350px;
+  height: 250px;
   left: 629px;
   top: -45px;
 }
+
+  .imgCenter {
+    position: absolute;
+    left: 25px;
+    width: 350px;
+
+  }
+
 
 .icons {
   position: absolute;

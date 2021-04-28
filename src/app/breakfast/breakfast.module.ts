@@ -3,11 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { BreakfastRoutingModule } from './breakfast-routing.module';
 import { BreakfastComponent } from './breakfast.component';
+import { CardComponent } from './card/card.component';
+
 
 
 @NgModule({
   declarations: [
-    BreakfastComponent
+    BreakfastComponent,
+    CardComponent,
+  
   ],
   imports: [
     CommonModule,
