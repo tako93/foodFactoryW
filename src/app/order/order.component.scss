@@ -1,0 +1,17 @@
+.container {
+  position: absolute;
+  width: 500px;
+  z-index: 100;
+  top: 200px;
+}
+
+.orderPic{
+    position: absolute;
+    left: 800px;
+    top: 100px;
+    z-index: 99;
+}
+
+.deliver {
+    width: 500px;
+}

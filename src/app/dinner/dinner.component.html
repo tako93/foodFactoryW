@@ -8,10 +8,11 @@
       praesentium ratione?
     </p>
   </div>
- <div class="mainDecoration">
-  <img class="mainDec" src="../assets/Ellipse 5.png" />
-</div>
-  <button class="btn button">order</button>
+  <div class="mainDecoration">
+    <img class="mainDec" src="../assets/Ellipse 5.png" />
+  </div>
+  <button class="btn button" [routerLink]="['/order']">order</button>
+
   <div class="foodGroup">
     <img class="imgGroup" src="./../../assets/Mask Group.png" />
   </div>
@@ -21,3 +22,5 @@
 
   <a class="icons"><i class="fab fa-facebook-f"></i> </a>
 </div>
+
+<router-outlet></router-outlet>

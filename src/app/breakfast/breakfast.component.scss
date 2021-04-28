@@ -1,4 +1,3 @@
-
 .imgBreakfast {
   position: absolute;
   object-fit: cover;
@@ -14,7 +13,7 @@
   position: absolute;
   width: 800px;
   height: 200px;
-  left:150px;
+  left: 150px;
   top: 300px;
 }
 
@@ -47,7 +46,6 @@ p {
   left: 120px;
 }
 
-
 .container {
   position: absolute;
   top: 900px;
@@ -56,22 +54,21 @@ p {
 .imgDec1 {
   position: absolute;
   top: 1000px;
-   opacity: 0.6;
-   
+  opacity: 0.6;
 }
 
 .imgDec2 {
   position: absolute;
   top: 1100px;
-   opacity: 0.6;
-   left: 1200px;
+  opacity: 0.6;
+  left: 1200px;
 }
 
 .imgDec3 {
   position: absolute;
   top: 1500px;
-   opacity: 0.6;
-   right: 1300px;
+  opacity: 0.6;
+  right: 1300px;
 }
 
 @media (max-width: 535.98px) {
@@ -110,5 +107,3 @@ p {
     top: 200px;
   }
 }
-
-
