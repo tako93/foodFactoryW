@@ -20,7 +20,26 @@
     <img class="imgCenter" src="./../../assets/chicken.png" />
   </div>
 
-  <a class="icons"><i class="fab fa-facebook-f"></i> </a>
+  <div class="filter">
+    <div class="col-4">
+      <input type="search" class="form-control" [(ngModel)]="filterValue" />
+    </div>
+    <div class="col-6">
+      <span>Filter By</span>: <b>{{ filterValue }}</b>
+    </div>
+  </div>
+</div>
+<div class="card-deck dinerCards">
+  <div class="card" *ngFor="let item of filteredProducts" style="width: 17rem">
+    <img [src]="item.imageUrl" [alt]="item.productName" class="card-img-top" />
+    <div class="card-body">
+      <h5 class="card-title">{{ item.productName | lowercase }}</h5>
+      <p class="card-text">
+        {{ item.price | currency: 'USD':'symbol':'1.2-2' }}
+      </p>
+      <a href="#" class="btn btn-success button1">order</a>
+    </div>
+  </div>
 </div>
 
 <router-outlet></router-outlet>

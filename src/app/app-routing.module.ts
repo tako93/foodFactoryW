@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
@@ -32,10 +34,21 @@ const routes: Routes = [
     loadChildren: () =>
       import('./order/order.module').then((m) => m.OrderModule),
   },
+  {
+    path: 'auth/sign-up',
+    loadChildren: () =>
+      import('./auth/sign-up/sign-up.module').then((m) => m.SignUpModule),
+  },
+  {
+    path: 'auth/sign-in',
+    loadChildren: () =>
+      import('./auth/sign-in/sign-in.module').then((m) => m.SignInModule),
+  },
+
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes), CommonModule, FormsModule],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
