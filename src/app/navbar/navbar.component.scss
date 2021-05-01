@@ -1,0 +1,212 @@
+.nav-container {
+  position: absolute;
+  width: 1300.56px;
+  height: 27px;
+  left: 40px;
+  top: -20px;
+  z-index: 50;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 181.82px;
+  height: 27px;
+  left: 70px;
+  top: 55px;
+}
+
+.nav-items {
+  position: absolute;
+  width: 300px;
+  height: 21px;
+  left: 396.56px;
+  top: 61px;
+}
+
+.content1 {
+  position: absolute;
+  width: 66px;
+  height: 21px;
+  left: 0px;
+  top: 0px;
+  
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: black;
+}
+
+.content2 {
+  position: absolute;
+  width: 51px;
+  height: 21px;
+  left: 129px;
+  top: 0px;
+  
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: black;
+}
+
+.content3 {
+  position: absolute;
+  width: 46px;
+  height: 21px;
+  left: 243px;
+  top: 0px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: black;
+}
+
+.content4 {
+  position: absolute;
+  width: 46px;
+  height: 21px;
+  left: 800px;
+  top: 0px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: black;
+}
+
+
+.name {
+  position: static;
+  width: 150px;
+  height: 27px;
+  left: 100px;
+  top: 0px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #333333;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 7px;
+}
+
+@media (max-width: 575.98px) {
+  .nav-container {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    width: 1000;
+    height: 27px;
+    left: 40px;
+    top: -20px;
+  }
+
+  .content1 {
+    position: absolute;
+    float: right;
+    display: block;
+    width: 66px;
+    height: 21px;
+    left: -250px;
+    top: 40px;
+  }
+
+  .content2 {
+    position: absolute;
+    float: right;
+    display: block;
+    width: 51px;
+    height: 21px;
+    left: -250px;
+    top: 70px;
+  }
+
+  .content3 {
+    position: absolute;
+    float: right;
+    display: block;
+    width: 46px;
+    height: 21px;
+    left: -250px;
+    top: 100px;
+  }
+
+  .name {
+    width: 150px;
+    height: 27px;
+    left: 250px;
+    top: 0px;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .nav-container {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    width: 1000;
+    height: 27px;
+    left: 40px;
+    top: -20px;
+  }
+
+  .content1 {
+    position: absolute;
+    float: right;
+    display: block;
+    width: 66px;
+    height: 21px;
+    left: -250px;
+    top: 40px;
+  }
+
+  .content2 {
+    position: absolute;
+    float: right;
+    display: block;
+    width: 51px;
+    height: 21px;
+    left: -250px;
+    top: 70px;
+  }
+
+  .content3 {
+    position: absolute;
+    float: right;
+    display: block;
+    width: 46px;
+    height: 21px;
+    left: -250px;
+    top: 100px;
+  }
+
+  .name {
+    width: 150px;
+    height: 27px;
+    left: 250px;
+    top: 0px;
+  }
+}

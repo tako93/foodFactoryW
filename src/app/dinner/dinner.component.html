@@ -1,0 +1,45 @@
+<div class="mainContainer">
+  <div class="mainText">
+    <h1>Feel the taste</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quam
+      aliquid maxime nisi ducimus sunt nobis natus in? Architecto porro
+      molestias sequi numquam voluptatibus nesciunt sint, quasi obcaecati
+      praesentium ratione?
+    </p>
+  </div>
+  <div class="mainDecoration">
+    <img class="mainDec" src="../assets/Ellipse 5.png" />
+  </div>
+  <button class="btn button" [routerLink]="['/order']">order</button>
+
+  <div class="foodGroup">
+    <img class="imgGroup" src="./../../assets/Mask Group.png" />
+  </div>
+  <div class="foodMain">
+    <img class="imgCenter" src="./../../assets/chicken.png" />
+  </div>
+
+  <div class="filter">
+    <div class="col-4">
+      <input type="search" class="form-control" [(ngModel)]="filterValue" />
+    </div>
+    <div class="col-6">
+      <span>Filter By</span>: <b>{{ filterValue }}</b>
+    </div>
+  </div>
+</div>
+<div class="card-deck dinerCards">
+  <div class="card" *ngFor="let item of filteredProducts" style="width: 17rem">
+    <img [src]="item.imageUrl" [alt]="item.productName" class="card-img-top" />
+    <div class="card-body">
+      <h5 class="card-title">{{ item.productName | lowercase }}</h5>
+      <p class="card-text">
+        {{ item.price | currency: 'USD':'symbol':'1.2-2' }}
+      </p>
+      <a href="#" class="btn btn-success button1">order</a>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

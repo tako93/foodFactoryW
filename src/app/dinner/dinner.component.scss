@@ -1,0 +1,297 @@
+.mainDecoration {
+  position: absolute;
+  max-width: 1200px;
+  max-height: 1107px;
+  left: 252px;
+  top: -445px;
+}
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 451px;
+  height: 264px;
+  left: 100px;
+  top: 346px;
+}
+
+.mainText {
+  position: absolute;
+  width: 451px;
+  left: 0px;
+}
+
+h1 {
+  position: static;
+  width: 277px;
+  height: 142px;
+  left: 0px;
+  top: 0px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 72px;
+}
+
+p {
+  position: static;
+  width: 451px;
+  height: 122px;
+  left: 0px;
+  top: 142px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+
+  color: #333333;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+
+.button {
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  left: 0px;
+  top: 257px;
+
+  background: #929b17;
+  border-radius: 48px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+
+  letter-spacing: 0.04em;
+}
+
+.button1 {
+  width: 120px;
+  height: 40px;
+  top: -50px;
+
+  background: #929b17;
+  border-radius: 48px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+
+  letter-spacing: 0.04em;
+}
+
+.foodGroup {
+  position: absolute;
+  width: 1178px;
+
+  left: 250px;
+  top: -450px;
+}
+
+.foodMain {
+  position: absolute;
+  width: 407px;
+  height: 308px;
+  left: 629px;
+  top: -45px;
+}
+
+.icons {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 713px;
+  top: 566px;
+}
+
+.imgCenter {
+  position: absolute;
+  width: 390px;
+  left: 25px;
+  top: -5px;
+}
+
+.dinerCards {
+  position: absolute;
+  top: 795px;
+}
+
+.filter {
+  position: absolute;
+  top: 365px;
+  width: 800px;
+}
+
+@media (max-width: 535.98px) {
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100px;
+    left: 100px;
+    top: 346px;
+  }
+
+  .mainText {
+    position: absolute;
+    width: 451px;
+    height: 264px;
+    left: 0px;
+    top: -5px;
+  }
+
+  h1 {
+    width: 277px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    font-size: 30px;
+  }
+
+  p {
+    width: 300px;
+    height: 100px;
+    left: 0px;
+    top: 100px;
+
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .button {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    left: 0px;
+    top: 257px;
+  }
+
+  .imgCenter {
+    width: 100px;
+    top: -300px;
+    left: -500px;
+  }
+
+  .imgGroup {
+    width: 800px;
+    top: 300px;
+    left: 100px;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 80px;
+    left: 50px;
+    top: 300px;
+  }
+
+  h1 {
+    width: 277px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    font-size: 30px;
+  }
+
+  p {
+    width: 300px;
+    height: 100px;
+    left: 0px;
+    top: 100px;
+
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .button {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    left: 0px;
+    top: 257px;
+  }
+  .imgCenter {
+    width: 200px;
+    left: -100px;
+    top: 200px;
+  }
+
+  .imgGroup {
+    width: 700px;
+    top: 100px;
+    left: 50px;
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 80px;
+    left: 100px;
+    top: 300px;
+  }
+
+  .imgCenter {
+    position: absolute;
+    width: 300px;
+    left: -100px;
+    top: -50px;
+  }
+
+  .imgGroup {
+    position: absolute;
+    width: 800px;
+    top: 50px;
+    left: 0px;
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1190.98px) {
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 80px;
+    left: 100px;
+    top: 300px;
+  }
+
+  .imgCenter {
+    position: absolute;
+    width: 200px;
+    left: -65px;
+    top: -50px;
+  }
+
+  .imgGroup {
+    position: absolute;
+    width: 800px;
+    top: 50px;
+    left: 0px;
+  }
+}
