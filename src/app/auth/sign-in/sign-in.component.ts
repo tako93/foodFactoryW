@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { LocalStorageService } from 'src/app/core/local-storage.service';
 import { SignInData } from 'src/app/data/sign-in-form.interface';
 import { TOKEN_KEY } from 'src/app/shared/constants';
-import { AuthService } from '../shared/auth.service';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-sign-in',
@@ -13,8 +13,8 @@ import { AuthService } from '../shared/auth.service';
 })
 export class SignInComponent implements OnInit {
   signInData: SignInData = {
-    email: 'eve.holt@reqres.in',
-    password: 'cityslicka',
+    email: 'takko.city@mail.com',
+    password: 'takotako',
     remember: false,
   };
   constructor(
@@ -26,7 +26,6 @@ export class SignInComponent implements OnInit {
   ngOnInit(): void {}
 
   async onSubmit(signInForm: NgForm) {
- 
     try {
       const result = await this._authService.firebaseSignIn(this.signInData);
       const idTokeResult = await result.user?.getIdTokenResult();
@@ -35,7 +34,7 @@ export class SignInComponent implements OnInit {
         if (this._authService.redirectUrl !== '') {
           this.router.navigateByUrl(this._authService.redirectUrl);
         } else {
-          this.router.navigate(['mainPage']);
+          this.router.navigate(['auth/account']);
         }
       }
     } catch (err) {

@@ -40,7 +40,7 @@ export class DinnerComponent implements OnInit {
     },
     {
       imageUrl:
-        'https://www.searchpng.com/wp-content/uploads/2019/01/Food-Transparent-PNG-Pictures-715x711.png',
+        'https://www.freepnglogos.com/uploads/food-png/food-sutherland-foodservice-12.png',
       productName: 'for you!',
 
       price: 30.997,

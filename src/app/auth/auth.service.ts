@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {  Observable } from 'rxjs';
+import { Observable } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { AngularFireAuth } from '@angular/fire/auth';
-import { LocalStorageService } from '../../core/local-storage.service';
+import { LocalStorageService } from '../core/local-storage.service';
 
 import {
   TOKEN_KEY,
@@ -12,9 +12,9 @@ import {
   TOKEN_EXP_KEY,
   TOKEN_TTL,
   REFRESH_TOKEN_KEY,
-} from '../../shared/constants';
-import { SignInData, SignInResponse } from '../../data/sign-in-form.interface';
-import { SignUpData, SignUpResponse } from '../../data/sign-up-form.interface';
+} from '../shared/constants';
+import { SignInData, SignInResponse } from '../data/sign-in-form.interface';
+import { SignUpData, SignUpResponse } from '../data/sign-up-form.interface';
 
 @Injectable({
   providedIn: 'root',

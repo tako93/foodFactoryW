@@ -8,7 +8,7 @@ import {
 } from '@angular/router';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { AuthService } from './auth/shared/auth.service';
+import { AuthService } from './auth/auth.service';
 import { FirebaseAuthService } from './auth/shared/firebase-auth.service';
 
 @Injectable({
