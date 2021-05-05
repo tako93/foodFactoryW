@@ -1,9 +1,12 @@
+<br><br><br><br><br>
 <div class="row">
-  <div class="col-12 my-4">
-    <h2 class="text-center text-muted">Sign In</h2> 
-
-     <hr class="divider" />
+  <br />
+  <div class="col-12">
+    <h2 class="text-center mb-4 text-muted">Sign In</h2>
   </div>
+  <!-- {{ signInData | json }} -->
+  <hr class="divider" style="color: rgba(3, 3, 190, 0.527)" />
+  <br />
   <div class="col-6 mx-auto">
     <form #signInForm="ngForm" (ngSubmit)="onSubmit(signInForm)">
       <div class="mb-3">
@@ -12,8 +15,8 @@
           type="email"
           class="form-control"
           id="email"
-          name="email"
           [(ngModel)]="signInData.email"
+          name="email"
         />
       </div>
       <div class="mb-3">
@@ -22,8 +25,8 @@
           type="password"
           class="form-control"
           id="password"
-          name="password"
           [(ngModel)]="signInData.password"
+          name="password"
         />
       </div>
       <div class="mb-3 form-check">
@@ -31,13 +34,13 @@
           type="checkbox"
           class="form-check-input"
           id="remember"
-          name="remember"
           [(ngModel)]="signInData.remember"
+          name="remember"
         />
         <label class="form-check-label" for="remember">Check me out</label>
       </div>
       <p>
-        
+        <a class="btn btn-link" [routerLink]="['/auth/sign-up']">Sign Up</a>
       </p>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
