@@ -14,15 +14,21 @@
     <label for="exampleInputPassword1" class="form-label"
       >Insert your surname</label
     >
-    <input type="password" class="form-control" id="exampleInputPassword1" />
+    <input type="text" class="form-control" id="exampleInputText1" />
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label"
+      >Insert your number</label
+    >
+    <input type="number" class="form-control" id="exampleInputNumber1" />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInput1" class="form-label"
       >Location where you want your order to be delivered</label
     >
-    <input type="password" class="form-control" id="exampleInputPassword1" />
+    <input type="place" class="form-control" id="exampleInputPlace1" />
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary" (click)="onAddItem()">Submit</button>
 </form>
 <div class="orderPic">
     <img src="../../assets/pngwing.com.png" class="deliver">

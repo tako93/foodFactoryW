@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { AuthGuard } from '../../src/app/auth.guard';
 
 const routes: Routes = [
   {
@@ -33,6 +34,7 @@ const routes: Routes = [
     path: 'order',
     loadChildren: () =>
       import('./order/order.module').then((m) => m.OrderModule),
+    canActivate: [AuthGuard],
   },
   {
     path: 'auth/sign-up',
@@ -44,7 +46,6 @@ const routes: Routes = [
     loadChildren: () =>
       import('./auth/sign-in/sign-in.module').then((m) => m.SignInModule),
   },
-
 ];
 
 @NgModule({

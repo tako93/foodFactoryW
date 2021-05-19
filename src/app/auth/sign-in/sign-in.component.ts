@@ -35,7 +35,7 @@ export class SignInComponent implements OnInit {
         if (this._authService.redirectUrl !== '') {
           this.router.navigateByUrl(this._authService.redirectUrl);
         } else {
-          this.router.navigate(['mainPage']);
+          this.router.navigate(['/order']);
         }
       }
     } catch (err) {

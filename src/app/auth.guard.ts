@@ -28,10 +28,7 @@ export class AuthGuard implements CanActivate {
     | Promise<boolean | UrlTree>
     | boolean
     | UrlTree {
-    // if (!this.authService.isAuthorized()) {
-    //   this.authService.redirectUrl = state.url;
-    //   this._router.navigate(['auth/sign-in']);
-    // }
+ 
 
     return this.fireAuthService.currentUser$.pipe(
       map((user) => {
