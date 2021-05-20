@@ -1,4 +1,4 @@
-https://clever-goldstine-6752d2.netlify.app/mainPage
+https://clever-goldstine-6752d2.netlify.app
 # FoodFactory 
 
 
