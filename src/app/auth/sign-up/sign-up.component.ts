@@ -6,6 +6,7 @@ import { SignUpData } from '../../data/sign-up-form.interface';
 import { NgForm } from '@angular/forms';
 import { TOKEN_KEY } from 'src/app/shared/constants';
 
+
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.component.html',
@@ -20,6 +21,7 @@ export class SignUpComponent implements OnInit {
     private router: Router,
     private authService: AuthService,
     private storageService: LocalStorageService,
+
   ) {}
 
   ngOnInit(): void {}
@@ -34,7 +36,7 @@ export class SignUpComponent implements OnInit {
         if (this.authService.redirectUrl !== '') {
           this.router.navigateByUrl(this.authService.redirectUrl);
         } else {
-          this.router.navigate(['auth/account']);
+          this.router.navigate(['/order']);
         }
       }
       //  this.router.navigate(['auth/account']);

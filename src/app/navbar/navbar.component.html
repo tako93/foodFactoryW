@@ -11,6 +11,12 @@
       <a class="content2" [routerLink]="['lunch']">Lunch</a>
       <a class="content3" [routerLink]="['dinner']">Dinner</a>
       <a class="content4" [routerLink]="['auth/sign-in']">Sign In</a>
+      <a class="content5" [routerLink]="['auth/sign-up']">Sign up</a>
+    
+        <button class="btn content6" (click)="onLogOut($event)">
+          Log Out
+        </button>
+    
     </nav>
   </div>
 </div>

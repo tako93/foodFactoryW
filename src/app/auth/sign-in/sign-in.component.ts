@@ -6,6 +6,7 @@ import { SignInData } from 'src/app/data/sign-in-form.interface';
 import { TOKEN_KEY } from 'src/app/shared/constants';
 import { AuthService } from '../auth.service';
 
+
 @Component({
   selector: 'app-sign-in',
   templateUrl: './sign-in.component.html',
@@ -34,7 +35,7 @@ export class SignInComponent implements OnInit {
         if (this._authService.redirectUrl !== '') {
           this.router.navigateByUrl(this._authService.redirectUrl);
         } else {
-          this.router.navigate(['auth/account']);
+          this.router.navigate(['/order']);
         }
       }
     } catch (err) {

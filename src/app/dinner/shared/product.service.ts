@@ -10,7 +10,7 @@ export class ProductService {
     return [
       {
         imageUrl:
-          'https://lh3.googleusercontent.com/proxy/Pb4gjkXjYzhWIZOgQi8B9mr89XETuiEsCmqeKMx4VkJT4jUVUSajS9GXZgp4_ZZtTjM5dMCrgjV_lz_PCs3S5Can4WFGj1pjZv1biVI4BvnbYKQ',
+          'https://www.pngkit.com/png/full/359-3597252_free-food-plate-png-food-plate-above-png.png',
         productName: 'best',
 
         price: 36.997,

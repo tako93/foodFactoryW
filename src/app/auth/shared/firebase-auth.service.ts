@@ -22,7 +22,7 @@ export class FirebaseAuthService {
     this.afAuth
       .signInWithPopup(new firebase.auth.GoogleAuthProvider())
       .then(() => {
-        this.router.navigate(['/home']);
+        this.router.navigate(['mainPage']);
       })
       .catch((error) => {
         console.log('[FirebaseAuthService@googleSignIn]', error);
@@ -33,7 +33,7 @@ export class FirebaseAuthService {
     this.afAuth
       .signInWithEmailAndPassword(data.email, data.password)
       .then(() => {
-        this.router.navigate(['/home']);
+        this.router.navigate(['mainPage']);
       })
       .catch((error) => {
         console.log('[FirebaseAuthService@signIn]', error);
@@ -45,7 +45,7 @@ export class FirebaseAuthService {
     return this.afAuth
       .createUserWithEmailAndPassword(data.email, data.password)
       .then((user) => {
-        this.router.navigate(['/home']);
+        this.router.navigate(['mainPage']);
       })
       .catch((error) => {
         console.log('[FirebaseAuthService@signUp]', error);
@@ -55,6 +55,6 @@ export class FirebaseAuthService {
 
   signOut() {
     this.afAuth.signOut();
-    this.router.navigate(['/home']);
+    this.router.navigate(['mainPage']);
   }
 }
