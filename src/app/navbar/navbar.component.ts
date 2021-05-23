@@ -41,7 +41,7 @@ export class NavbarComponent implements OnInit {
   }
 
   private notAuthorizedAction(): void {
-     this.fireAuthService.signOut();
+    this.fireAuthService.signOut();
     this.router.navigate(['mainPage']);
   }
 
