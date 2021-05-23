@@ -5,13 +5,19 @@ import { Router } from '@angular/router';
 import { AuthService } from '../auth/auth.service';
 
 import { EXP_TIME } from '../shared/constants';
+
+import { FirebaseAuthService } from 'src/app/auth/shared/firebase-auth.service';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
-  constructor(private authService: AuthService, private router: Router) {}
+  constructor(
+    private authService: AuthService,
+    private router: Router,
+    public fireAuthService: FirebaseAuthService,
+  ) {}
 
   ngOnInit(): void {
     if (this.authService.isAuthorized()) {
@@ -35,7 +41,7 @@ export class NavbarComponent implements OnInit {
   }
 
   private notAuthorizedAction(): void {
-    this.authService.logOut();
+    this.fireAuthService.signOut();
     this.router.navigate(['mainPage']);
   }
 
